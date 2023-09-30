@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Confnirmação de Compra</title>
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <form action="post">
+          <div id="personal-information">
+            <h2>Informações Pessoais</h2>
+
+            <div class="divider"></div>
+
+            <div class="form-input">
+              <label for="name">Nome Completo *</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Insira seu nome"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="cpf">CPF *</label>
+              <input
+                type="text"
+                name="cpf"
+                id="cpf"
+                required
+                placeholder="Insira seu CPF"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="email">E-mail *</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Insira seu E-mail"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="phone">Telefone *</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+                placeholder="Insira seu Telefone"
+              />
+            </div>
+          </div>
+
+          <div id="delivery-information">
+            <h2>Informações de Entrega</h2>
+
+            <div class="divider"></div>
+
+            <div class="form-input">
+              <label for="address">Endereço *</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                required
+                placeholder="Insira seu Endereço"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="neighborhood">Bairro *</label>
+              <input
+                type="text"
+                name="neighborhood"
+                id="neighborhood"
+                required
+                placeholder="Insira seu Bairro"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="city">Cidade *</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                required
+                placeholder="Insira sua Cidade"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="cep">CEP *</label>
+              <input
+                type="text"
+                name="cep"
+                id="cep"
+                required
+                placeholder="Insira seu CEP"
+              />
+            </div>
+
+            <div class="form-input">
+              <label for="complement">Complemento</label>
+              <input
+                type="text"
+                name="complement"
+                id="complement"
+                placeholder="Insira complemento"
+              />
+            </div>
+          </div>
+
+          <div id="payment-information">
+            <h2>Informações de Pagamento</h2>
+
+            <div class="divider"></div>
+
+            <div class="form-input-radio">
+              <p>Forma de Pagamento</p>
+              <div class="inputs">
+                <div class="radio">
+                  <label for="credit-card">Cartão de Crédito</label>
+                  <input
+                    type="radio"
+                    name="payment"
+                    checked
+                    id="credit-card"
+                    value="credit-card"
+                  />
+                </div>
+                <div class="radio">
+                  <label for="bank-splip">Boleto Bancário</label>
+                  <input
+                    type="radio"
+                    name="payment"
+                    id="bank-splip"
+                    value="bank-splip"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-input">
+              <label for="card-name">Nome do Cartão *</label>
+              <input
+                type="text"
+                name="card-name"
+                id="card-name"
+                required
+                placeholder="Insira o nome do Cartão"
+              />
+            </div>
+
+            <div class="form-input-flex">
+              <div class="form-input">
+                <label for="card-number">Número do Cartão *</label>
+                <input
+                  type="text"
+                  name="card-number"
+                  id="card-number"
+                  required
+                  placeholder="Insira número do Cartão"
+                />
+              </div>
+              <div class="form-input">
+                <label for="card-date">Data de validade do Cartão *</label>
+                <input
+                  type="text"
+                  name="card-date"
+                  id="card-date"
+                  required
+                  placeholder="Insira a validade do Cartão"
+                />
+              </div>
+            </div>
+
+            <div class="form-input">
+              <label for="card-cvv">CVV *</label>
+              <input
+                type="text"
+                name="card-cvv"
+                id="card-cvv"
+                required
+                placeholder="CVV"
+              />
+            </div>
+          </div>
+
+          <div id="form-bottom">
+            <h2>Finalizar Compra</h2>
+
+            <div class="divider"></div>
+
+            <div class="total">
+              <h4>Total</h4>
+              <div class="price">
+                <p>R$ 219,00</p>
+                <span>ou 10x de R$ 21,00 sem juros</span>
+              </div>
+            </div>
+
+            <button class="button-submit" type="submit">
+              Realizar Pagamento
+            </button>
+          </div>
+        </form>
+      </section>
+      <aside>
+        <div class="resume">
+          <h2>RESUME</h2>
+
+          <div class="divider"></div>
+
+          <div class="product">
+            <img src="./assets/images/sneakers.png" alt="sapato da nike" />
+            <p>Tênis Nike Revolution 6 Next Nature Masculino</p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="description-buy">
+            <div class="description-name">
+              <p>Subtotal:</p>
+              <p>Frete:</p>
+              <p>Desconto:</p>
+            </div>
+            <div class="description-value">
+              <p>R$ 219,00</p>
+              <p>R$ 0,00</p>
+              <p>R$ 30,00</p>
+            </div>
+          </div>
+
+          <div class="total">
+            <h4>Total</h4>
+            <div class="price">
+              <p>R$ 219,00</p>
+              <span>ou 10x de R$ 21,00 sem juros</span>
+            </div>
+          </div>
+
+          <button class="button-submit" type="submit">
+            Realizar Pagamento
+          </button>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
